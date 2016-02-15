@@ -33,6 +33,7 @@ def  listyMax(listOfLists):
                     if number >= biggest_num:
                         biggest_num = number
                 bigNumList.append( biggest_num )
+                biggest_num = 0
             #else:
                 #bigNumList.append( None )
         biggest_num = 0

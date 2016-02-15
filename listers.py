@@ -8,7 +8,7 @@
     the program is storing the wrong thing in bigNumList when it encounters a empty list mixed in with nonemtpy lists.
     I fixed it by storing None in bigNumList whenever I find an empty list.  Run my tests and you will see the problem
     in bigNumList caused by listOfLists that has empty lists mixed in with nonempty. The biggest number in an
-    empty list should be nothing and not some number (what would that number even mean?).
+    empty list should be nothing and not some number (zero is still a number, None is a better representation).
     uncomment lines that have # at the start (31,36,37,41) and run again and you will see the fix in bigNumList. 
     I used None type to represent the lists that were empty in bigNumList and when you look thru bigNumList 
     now for the largest its position will correspond to the position of the list it came from 

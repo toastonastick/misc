@@ -1,15 +1,15 @@
-""" 1)possible error:  changed code to also test for list of empty lists [[],[],.....] instead of 
+""" 1)possible bug:  changed code to also test for list of empty lists [[],[],.....] instead of 
     just one big empty list [] now it tests for both. Use a temp variable = 0 and a for loop to 
     go thru listOfLists and if length of any list is greater than 0 (not empty) then store new length in listlength.
     then you can test and if all lists are empty listlength will still be = 0
 
 
-    2)minor error: the following error is in how bigNumList is used but it does not effect the final answer. 
+    2)conceptaul error: the following error is in how bigNumList is used but it does not effect the final answer. 
     the program is storing the wrong thing in bigNumList when it encounters a empty list mixed in with nonemtpy lists.
     I fixed it by storing None in bigNumList whenever I find an empty list.  Run my tests and you will see the problem
     in bigNumList caused by listOfLists that has empty lists mixed in with nonempty. The biggest number in an
-    empty list should be nothing.
-    uncomment 4 lines that have # at the start and run again and you will see the fix in bigNumList. 
+    empty list should be nothing and not some number (what would that number even mean?).
+    uncomment lines that have # at the start (31,36,37,41) and run again and you will see the fix in bigNumList. 
     I used None type to represent the lists that were empty in bigNumList and when you look thru bigNumList 
     now for the largest its position will correspond to the position of the list it came from 
     and if it is None type then the test is just skipped.

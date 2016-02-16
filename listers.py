@@ -24,7 +24,7 @@ def  listyMax(listOfLists):
             listlength = length
     if listlength == 0: 
         print("listOfLists is:  {} \n".format(listOfLists))
-        print("Error: no lists")
+        print("Error: no lists\n\n")
     else:                   
         biggest_num = 0
         bigNumList = []

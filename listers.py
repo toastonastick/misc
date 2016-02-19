@@ -15,7 +15,7 @@
     and if it is None type then the test is just skipped.
 """
 
-def  listyMax(listOfLists):
+def  listMax(listOfLists):
     
     listlength = 0
     for lists in listOfLists:
